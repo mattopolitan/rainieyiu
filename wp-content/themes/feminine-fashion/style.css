@@ -1,0 +1,505 @@
+/*
+Theme Name: Feminine Fashion
+Theme URI: https://rarathemes.com/wordpress-themes/feminine-fashion/
+Template: chic-lite
+Author: Rara Theme
+Author URI: https://rarathemes.com/
+Description: Feminine Fashion is a feature-rich and easy to use feminine blog theme for professional bloggers. This theme is for you if you want to share your expert fashion tips, travel expertise, your favorite food recipes, or create a lifestyle, beauty and makeup, coaching, or any other niche blog. The theme is mobile friendly, SEO optimized, Schema friendly, and loads faster to help you rank your website higher on search engines.  You can easily choose from unlimited colors and 900+ Google fonts to change your website look and feel with a single click. This theme comes with a strategically placed newsletter section that can help you generate more leads, and Instagram section to flaunt your Instagram posts. Feminine Fashion is translation ready, WooCommerce and RTL compatible. Check demo at https://rarathemes.com/theme-demo/?theme=feminine-fashion, read the documentation at https://docs.rarathemes.com/docs/feminine-fashion/, and get support at https://rarathemes.com/support-ticket/.
+Tags: blog, one-column, two-columns, right-sidebar, left-sidebar, footer-widgets, custom-background, custom-header, custom-menu, custom-logo, featured-images, threaded-comments, full-width-template, rtl-language-support, translation-ready, theme-options, e-commerce
+Version: 1.0.2
+Requires at least: 4.7
+Requires PHP: 5.6
+Tested up to: 6.2
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: feminine-fashion
+Tags: blog, one-column, two-columns, right-sidebar, left-sidebar, footer-widgets, custom-background, custom-header, custom-menu, custom-logo, featured-images, threaded-comments, full-width-template, rtl-language-support, translation-ready, theme-options, e-commerce
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Chic Lite is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+/*===========================
+BANNER STYLE ONE
+===========================*/
+
+.site-banner.style-one .item img {
+    object-fit: cover;
+}
+
+.site-banner.style-one .item .svg-holder .fallback-svg {
+    width: 100%;
+}
+
+.site-banner .banner-caption .banner-title a {
+    color: var(--black-color);
+}
+
+.site-banner.style-one .banner-caption .cat-links {
+    margin-bottom: 2px;
+    display: table;
+    padding: 3px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-banner.style-one .banner-caption .banner-title {
+    padding: 0 10px;
+}
+
+.site-banner.style-one .banner-caption .banner-title a {
+    color: var(--white-color);
+}
+
+
+/*===========================
+HEADER STYLE NINE
+===========================*/
+.site-header.style-nine .header-bottom {
+    border-bottom: none;
+    box-shadow: 0 2px 4px rgba(var(--black-color-rgb), 0.1);
+}
+
+.site-header.style-nine .container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 3%;
+}
+
+.style-nine .header-bottom .secondary-menu {
+    flex: initial;
+    border-right: 1px solid rgba(var(--primary-color-rgb), 0.2);
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.style-nine .header-bottom .secondary-menu .toggle-btn {
+    display: inline-block;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.style-nine .header-bottom .secondary-menu .toggle-btn .toggle-bar:first-child {
+    top: -12px;
+}
+
+.style-nine .header-bottom .secondary-menu .toggle-btn .toggle-bar {
+    background: #333;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transition: all ease 0.35s;
+    -moz-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+}
+
+.style-nine .header-bottom .secondary-menu .toggle-btn .toggle-bar:last-child {
+    bottom: -12px;
+}
+
+
+.style-nine .header-bottom .secondary-menu ul li {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.style-nine .header-bottom .secondary-menu ul.nav-menu {
+    position: relative;
+}
+
+.style-nine .secondary-menu .nav-menu .close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.style-nine .header-bottom .secondary-menu+.site-branding {
+    padding-left: 20px;
+}
+
+.site-header.style-nine .site-branding {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.site-header.style-nine .main-navigation {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.site-header.style-nine .right {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.style-nine .header-bottom .secondary-menu .secondary-menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 320px;
+    background: var(--white-color);
+    box-shadow: 0 2px 10px rgba(var(--black-color-rgb), 0.1);
+    z-index: 999;
+    overflow: hidden;
+    padding-top: 80px;
+    display: none;
+}
+
+.style-nine .secondary-menu .close {
+    /* display: block; */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    left: 280px;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    color: initial;
+}
+
+.style-nine .secondary-menu .active .close {
+    display: block;
+}
+
+.style-nine .secondary-menu .close::before,
+.style-nine .secondary-menu .close::after {
+    content: "";
+    background: #333;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    -webkit-transition: all ease 0.35s;
+    -moz-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.style-nine .secondary-menu .close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.style-nine .header-bottom .secondary-menu .mobile-menu {
+    width: 320px;
+    height: 100%;
+}
+
+.style-nine .header-bottom .secondary-menu .secondary-menu-list .mobile-menu>div,
+.style-nine .header-bottom .secondary-menu .secondary-menu-list .nav-menu {
+    height: 100%;
+}
+
+.style-nine .header-bottom .secondary-menu ul.nav-menu .ps__rail-y {
+    right: auto !important;
+    left: 0;
+}
+
+.style-nine .header-bottom .secondary-menu .toggle-btn:hover .toggle-bar {
+    background: var(--primary-color);
+}
+
+.style-nine .secondary-menu .close:hover::before,
+.style-nine .secondary-menu .close:hover::after {
+    background: #f00;
+}
+
+.style-nine .secondary-menu ul ul {
+    display: none;
+    position: static;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    background: rgba(var(--black-color-rgb), 0.02);
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.style-nine .header-bottom .secondary-menu ul li a {
+    display: block;
+    margin: 1px;
+    padding: 25px 15px;
+    border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.1);
+}
+
+.style-nine .header-bottom .secondary-menu ul li.menu-item-has-children>a {
+    padding-right: 30px;
+}
+
+.style-nine .header-bottom .secondary-menu ul li .submenu-toggle {
+    top: 0;
+    width: 25px;
+    height: 60px;
+    font-size: inherit;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: 5px;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    -webkit-transition: all ease 0.35s;
+    -moz-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+}
+
+.style-nine .header-bottom .secondary-menu ul li .submenu-toggle.active {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.style-nine .header-bottom .secondary-menu ul.nav-menu.ps--active-y {
+    padding-left: 10px;
+}
+
+.style-nine .header-bottom .header-social+.header-search,
+.style-nine .header-bottom .header-social+.cart-block {
+    border-left: 1px solid rgba(var(--primary-color-rgb), 0.15);
+    padding-left: 15px;
+    margin-left: 5px;
+}
+
+/*========================================
+BLOG POST LAYOUT FOUR & FIVE & TWELVE
+========================================*/
+.post-layout-twelve .site-main article {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.2);
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+}
+
+.post-layout-twelve .site-main article {
+    align-items: center;
+}
+
+.post-layout-twelve .site-main article .post-thumbnail {
+    margin-bottom: 0;
+    width: 45%;
+}
+
+.post-layout-twelve .site-main article .post-thumbnail {
+    width: 47%;
+}
+
+.post-layout-twelve .site-main article .content-wrap {
+    width: 55%;
+    padding-left: 30px;
+}
+
+.post-layout-twelve .site-main article .content-wrap {
+    width: 53%;
+}
+
+.post-layout-twelve .site-main article .content-wrap .entry-title {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.post-layout-twelve .site-main article .content-wrap span.category {
+    display: inline-block;
+    font-size: 0.6666em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.49;
+    letter-spacing: 1px;
+}
+
+.post-layout-twelve .site-main article .content-wrap span.category a {
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post-layout-twelve .site-main article .content-wrap span.category a:hover {
+    color: #121212;
+    text-decoration: none;
+}
+
+.post-layout-twelve .site-main article .content-wrap span.category a::after {
+    content: "";
+    background: rgba(var(--primary-color-rgb), 0.3);
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: -2px 5px 0 8px;
+}
+
+.post-layout-twelve .site-main article .content-wrap span.category a:last-child::after {
+    display: none;
+}
+
+.post-layout-twelve .site-main article .entry-meta {
+    margin-bottom: 30px;
+}
+
+.post-layout-twelve .site-main article .post-thumbnail {
+    margin-bottom: 30px;
+}
+
+.post-layout-twelve .site-main article .content-wrap {
+    padding-left: 30px;
+}
+
+.site-banner.style-eight .owl-carousel .owl-stage-outer+.owl-nav .owl-next {
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: center;
+}
+
+.site-banner.style-eight .owl-carousel .owl-stage-outer+.owl-nav [class*="owl-"] {
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: center;
+}
+
+.site-banner.style-one .owl-carousel>.owl-nav button.owl-next {
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23fff" d="M295.515 115.716l-19.626 19.626c-4.753 4.753-4.675 12.484.173 17.14L356.78 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h344.78l-80.717 77.518c-4.849 4.656-4.927 12.387-.173 17.14l19.626 19.626c4.686 4.686 12.284 4.686 16.971 0l131.799-131.799c4.686-4.686 4.686-12.284 0-16.971L312.485 115.716c-4.686-4.686-12.284-4.686-16.97 0z"></path></svg>');
+    background-color: rgba(var(--black-color-rgb), 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+}
+
+.site-banner.style-one .owl-carousel .owl-stage-outer+.owl-nav [class*="owl-"]:hover {
+    background-color: var(--primary-color);
+}
+
+.site-banner.style-one .owl-carousel .owl-stage-outer+.owl-nav [class*="owl-"] {
+    background-color: rgba(var(--black-color-rgb), 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+}
+
+/* Design fixes */
+.site-banner.style-one .owl-carousel>.owl-nav button.owl-prev {
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23fff" d="M152.485 396.284l19.626-19.626c4.753-4.753 4.675-12.484-.173-17.14L91.22 282H436c6.627 0 12-5.373 12-12v-28c0-6.627-5.373-12-12-12H91.22l80.717-77.518c4.849-4.656 4.927-12.387.173-17.14l-19.626-19.626c-4.686-4.686-12.284-4.686-16.971 0L3.716 247.515c-4.686 4.686-4.686 12.284 0 16.971l131.799 131.799c4.686 4.685 12.284 4.685 16.97-.001z"></path></svg>');
+}
+
+.promo-section .owl-carousel>.owl-nav button.owl-prev {
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M152.485 396.284l19.626-19.626c4.753-4.753 4.675-12.484-.173-17.14L91.22 282H436c6.627 0 12-5.373 12-12v-28c0-6.627-5.373-12-12-12H91.22l80.717-77.518c4.849-4.656 4.927-12.387.173-17.14l-19.626-19.626c-4.686-4.686-12.284-4.686-16.971 0L3.716 247.515c-4.686 4.686-4.686 12.284 0 16.971l131.799 131.799c4.686 4.685 12.284 4.685 16.97-.001z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+}
+
+.promo-section .owl-carousel>.owl-nav button.owl-next {
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M295.515 115.716l-19.626 19.626c-4.753 4.753-4.675 12.484.173 17.14L356.78 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h344.78l-80.717 77.518c-4.849 4.656-4.927 12.387-.173 17.14l19.626 19.626c4.686 4.686 12.284 4.686 16.971 0l131.799-131.799c4.686-4.686 4.686-12.284 0-16.971L312.485 115.716c-4.686-4.686-12.284-4.686-16.97 0z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+}
+
+.site-header.style-nine .main-navigation {
+    align-items: center;
+}
+
+.site-banner .banner-caption {
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1366px) {
+    .promo-section .owl-carousel>.owl-nav button[class*="owl-"] {
+        left: -24px;
+    }
+
+    .promo-section .owl-carousel>.owl-nav button.owl-next {
+        left: auto;
+        right: -24px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .site-banner .banner-caption {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .post-layout-twelve .site-main article {
+        flex-direction: column;
+    }
+
+    .post-layout-twelve .site-main article .post-thumbnail,
+    .post-layout-twelve .site-main article .content-wrap {
+        width: 100%;
+        padding: 0;
+    }
+
+    #featured_area.promo-section .owl-carousel>.owl-nav button[class*="owl-"] {
+        left: -10px;
+    }
+
+    #featured_area.promo-section .owl-carousel>.owl-nav button.owl-next {
+        left: auto;
+        right: -10px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .site-banner .banner-caption {
+        padding: 6px 0;
+    }
+
+    .site-header.style-nine .right {
+        justify-content: center;
+    }
+}

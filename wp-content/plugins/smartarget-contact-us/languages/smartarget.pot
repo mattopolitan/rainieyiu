@@ -1,0 +1,20 @@
+msgid "Follow this steps to add Smartarget.online Integration"
+msgstr ""
+
+msgid "Create a %s account or log in to yours"
+msgstr ""
+
+msgid "Add your website"
+msgstr ""
+
+msgid "and configure Whatsapp - Contact Us app for your website"
+msgstr ""
+
+msgid "Go to Integration and copy the User ID to the input text box to this page"
+msgstr ""
+
+msgid "Save all changes"
+msgstr ""
+
+msgid "Need Support?"
+msgstr ""
